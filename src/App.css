@@ -13,13 +13,21 @@
   height: 100px;
 }
 
+button.button {
+  display: flex;
+  margin: auto;
+  background: black;
+  color: rgb(40, 160, 190);
+  font-size: 16px;
+}
+
 h1,h2 {
- margin-left: .8em;
+ margin-top: 12px;
  text-align: center;
 }
 
-h1.title {
-  color: rgba(196, 169, 207, 0.986);
+h1.count {
+  color: rgba(170, 34, 136, 0.966);
 }
 
 p {

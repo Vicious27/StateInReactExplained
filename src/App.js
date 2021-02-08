@@ -1,5 +1,5 @@
 import './App.css';
-import ExampleClass from './ExampleClass';
+import Counter from './Counter';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         {/* <img src={ } className="App-logo" alt="logo" /> */}
         <h1> State in React</h1>
       </header>
-      <ExampleClass />
+      <Counter />
     </>
   );
 }
