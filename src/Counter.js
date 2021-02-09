@@ -4,22 +4,20 @@ import './App.css';
 
 class Counter extends React.Component {
   state = {
-    count: 0
-  };
+    name: "Raul garcia"
+  }
 
-
-  handleClick = e => {
-    e.preventDefault();
-    this.setState({
-      count: this.state.count + 1
-    });
-  };
 
   render() {
     return (
       <>
-        <h1 className="count">{this.state.count}</h1>
-        <button className="button" onClick={this.handleClick}>Click me! +</button>
+        <h1 className="count">{this.state.name}</h1>
+        <button className="button" onClick={e => {
+          e.preventDefault();
+          this.setState({
+            name: "Vicious Ways"
+          });
+        }} >Click me!</button>
       </>
     )
   };
