@@ -1,27 +1,31 @@
 import React from 'react';
+import Button from './Button';
+import Name from './Name';
 import './App.css';
 
 
-const Name = props => <h1>{props.count}</h1>;
 
 class Counter extends React.Component {
   state = { count: 0 }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState({
+      count: this.state.count + 1
+    });
+  };
 
   render() {
     return (
       <>
         <Name count={this.state.count} />
-        <button className="button"
-          onClick={e => {
-            e.preventDefault();
-            this.setState({
-              count: this.state.count + 1
-            });
-          }}
-        >Click me! + </button>
+        <Button handleClick={this.handleClick} />
       </>
     )
-  }
-}
+  };
+};
 
 export default Counter;
+
+
+
