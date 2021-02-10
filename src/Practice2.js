@@ -2,8 +2,15 @@ import React from "react";
 
 class Practice2 extends React.Component {
   state = {
-    username: "yourusername"
+    username: "Vicious Ways"
   };
+
+  handleUsername = e => {
+    e.preventDefault();
+    this.setState({
+      username: e.target.value
+    })
+  }
 
   /* 
     1. Create an arrow function named handleUsername
@@ -21,7 +28,7 @@ class Practice2 extends React.Component {
             4. onChange should call this.handleUsername
             5. Set placeholder to the username in state
           */}
-          <input onChange="" type="text" placeholder="" />
+          <input onChange={this.handleUsername} type="text" placeholder={this.state.username} />
         </p>
       </>
     );
