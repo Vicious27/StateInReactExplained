@@ -2,7 +2,6 @@ import React from 'react';
 import Button from './Button';
 import Name from './Name';
 import './App.css';
-import SimpleStorage from 'react-simple-storage';
 
 
 
@@ -20,7 +19,6 @@ class Counter extends React.Component {
   render() {
     return (
       <>
-        <SimpleStorage parent={this} />
         <Name count={this.state.count} />
         <Button handleClick={this.handleClick} />
       </>
