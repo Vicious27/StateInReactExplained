@@ -1,5 +1,5 @@
 import './App.css';
-import Practice2 from './Practice2';
+import Practice3 from './Practice3';
 
 
 
@@ -10,7 +10,8 @@ function App() {
         <h1> Working With State</h1>
       </header>
       {/* <Practice1 /> */}
-      <Practice2 />
+      {/* <Practice2 /> */}
+      <Practice3 />
     </>
   );
 }
