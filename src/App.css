@@ -16,12 +16,12 @@
 button.button {
   display: flex;
   margin: auto;
-  width: 6em;
+  width: 8em;
   height: 2em;
   align-items: center;
   justify-content: center;
   background: black;
-  color: rgb(40, 160, 190);
+  color: rgb(155, 58, 158);
   font-size: 16px;
   border-radius: .50em;
 }
