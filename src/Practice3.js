@@ -31,11 +31,11 @@ class Practice3 extends React.Component {
           {this.state.first} {this.state.last}
         </h2>
         <UserForm
-          id={this.state.first}
+          id="firstName"
           label="First"
           onChange={this.handleFirst} />
         <UserForm
-          id={this.state.last}
+          id="lastName"
           label="Last"
           onChange={this.handleLast} />
       </>
