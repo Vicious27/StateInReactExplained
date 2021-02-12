@@ -1,6 +1,5 @@
 import './App.css';
-import Practice4 from './Practice4';
-
+import Practice5 from './Practice5';
 
 
 function App() {
@@ -12,7 +11,8 @@ function App() {
       {/* <Practice1 /> */}
       {/* <Practice2 /> */}
       {/* <Practice3 /> */}
-      <Practice4 />
+      {/* <Practice4 /> */}
+      <Practice5 />
     </>
   );
 }
